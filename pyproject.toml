@@ -1,0 +1,21 @@
+[project]
+name = "product-rag-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "chromadb>=1.5.9",
+    "groq>=1.7.0",
+    "pandas>=3.0.5",
+    "python-dotenv>=1.2.3",
+    "sentence-transformers>=6.0.1",
+    "streamlit>=1.63.0",
+]
+
+[project.scripts]
+product-rag-chatbot = "product_rag_chatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
